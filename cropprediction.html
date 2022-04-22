@@ -1,0 +1,71 @@
+<!Doctype Html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+x {
+  font-size: 20px;
+}
+
+div.a {
+  text-align: center;
+}
+div.b {
+  text-align: center;
+}
+div.c {
+  text-align: left;
+}
+div.d {
+  text-align: right;
+}
+body {
+  
+  background-image:url("{{ url_for('static', filename='farmer.jpg') }}");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+}
+</style>
+
+
+<div class="a"><br><br>
+<h1>CROP RECOMMENDATION</h1>
+<form action="/submit" method='post'>
+  <label for="N">Nitrogen:</label><br>
+  <input type="text" id="N" name="N" value="0"><br><br>
+  <label for="P">Phosphorus:</label><br>
+  <input type="text" id="P" name="P" value="0"><br><br>
+  <label for="K">Potassium:</label><br>
+  <input type="text" id="K" name="K" value="0"><br><br>
+  <label for="temperature">temperature:</label><br>
+  <input type="text" id="temperature" name="temperature" value="0"><br><br>
+  <label for="humidity">humidity:</label><br>
+  <input type="text" id="humidity" name="humidity" value="0"><br><br>
+  <label for="ph">ph:</label><br>
+  <input type="text" id="ph" name="ph" value="0"><br><br>
+  <label for="rainfall">rainfall (in mm):</label><br>
+  <input type="text" id="rainfall" name="rainfall" value="0"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+</head>
+<br><br>
+<div class="container">
+  <div class="centered">
+  <h1 style="color:black;">KISAN VIKAS</h1>
+  
+  <a href="kisanvikas@gmail.com">Queries.com</a>.<br>   
+  </div>
+  </div>
+</style>
+</html>
